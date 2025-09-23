@@ -11,6 +11,14 @@ body {
     /* overflow: hidden; */
 }
 
+.img{
+    justify-content: center;
+    margin-left: 30%;
+    width: 300px;
+    margin-top: 24px;   
+    margin-bottom: 24px;
+}
+
 .estrutura {
     max-width: 960px;
     height: 75vh;
@@ -64,11 +72,13 @@ body {
     padding: 20px 40px;
     cursor: pointer;
     margin-top: 40px;
+    margin-left: 345px;
     font-size: .975rem;
     border-radius: 4px;
     box-shadow: 0 0 0 0 rgba(0, 1, 37, .7);
     transition: .3s ease;
     outline: none;
+    align-self: flex-end;
 
     animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
 }

@@ -1,9 +1,10 @@
-function init(SeletorFrase, seletorAutor, seletorBtn) {
+function init(SeletorFrase, seletorAutor, seletorBtn, seletorImg) {
     // Selecionando elementos do DOM
     const frase = document.querySelector(SeletorFrase);
     const autor = document.querySelector(seletorAutor);
     const btn = document.querySelector(seletorBtn);
     const body = document.querySelector('body');
+    const img = document.querySelector(seletorImg);
 
     // Tratativa de erro
     if (frase && autor && btn) {
@@ -17,11 +18,17 @@ function init(SeletorFrase, seletorAutor, seletorBtn) {
                 // Aguarda o retorno do Fetch e transforma em JSON
                 const dadosJSON = await (await dadosResponse).json();
                 // Puxando as frases de forma aleatoria
-                const aleatorio = dadosJSON[Math.floor(Math.random() * 200)];
+                const aleatorio = dadosJSON[Math.floor(Math.random() * dadosJSON.length)];
 
                 // Insere os dados no DOM
                 frase.innerText = aleatorio.quote;
                 autor.innerText = aleatorio.author;
+
+                if (img) {
+                   img.src = aleatorio.img ? aleatorio.img : 'imgs/default.jpg';
+                   img.style.display = 'block';
+                }
+
                 return gradientColor();
 
             } catch (erro) {
@@ -61,4 +68,4 @@ function init(SeletorFrase, seletorAutor, seletorBtn) {
 
 }
 // Chamando a função geral para inicar o codigo
-init('.frase', '.autor', '.btn-novo');
+init('.frase', '.autor', '.btn-novo','.img');
