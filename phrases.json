@@ -15,5 +15,25 @@
         "quote": "This is the skin of a killer, Bella",
         "author": "Edward Cullen, Twilight (2008)",
         "img": "imgs/twl.png"
+    },
+    {
+        "id": 3,
+        "quote": "Danny: Does he make you laugh? Tess: He doesn't make me cry",
+        "author": "Danny Ocean, Tess Ocean, Ocean's Eleven (2001)",
+        "img": "imgs/oceanselv.png"
+
+    },
+    {
+        "id": 4,
+        "quote":"For the first time in my life, I'm not afraid...",
+        "author": "Liz, Hellboy (2004)",
+        "img": "https://64.media.tumblr.com/42a6a7cf9ea88dced1f5c5e55bc5e78f/068e11b4a60d2e95-14/s500x750/1c5ed771640601085b189196549e65a6ed207b68.gifv"
+
+    },
+    {
+        "id": 5,
+        "quote": "I'm free and I'm single",
+        "author": "Donna Sheridan, Mamma Mia!(2008)",
+        "img": "https://38.media.tumblr.com/f381e909d6b6c2e53743277bedcacd6d/tumblr_ngxstrI3To1u6n7jjo1_500.gif"
     }
 ]
